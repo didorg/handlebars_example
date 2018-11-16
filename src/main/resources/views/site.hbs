@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HandlebarsExample.com</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="icon" href="/images/favicon.png">
+
+  {{!-- BootstrapCDN --}}
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+<div class="header">
+  <h1>{{title}}</h1>
+</div>
+
+<div>{{{navbar}}}</div>
+
+{{!-- local style --}}
+<div>
+  <h2 class="custom-local-text">{{name}}</h2>
+  <p class="custom-local-text">Styling with local content path</p>
+</div>
+
+{{!-- Bootstrap style --}}
+<div class="alert-info text-center">
+  <h3>{{{result}}}</h3>
+  <p>Styling with Bootstrap CDN</p>
+</div>
+
+<div class="footer">
+  {{{footer}}}
+</div>
+{{!-- BootstrapCDN script --}}
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>

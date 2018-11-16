@@ -1,0 +1,20 @@
+.header {
+  background-color: #d2d0d7;
+  color: #18465F;
+  padding: 10px;
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #050018;
+  color: white;
+  text-align: center;
+}
+
+.custom-local-text{
+  color: #18465f;
+}
+
